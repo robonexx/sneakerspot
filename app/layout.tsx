@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Providers from '@/components/Providers'
+import Header from '@/components/layouts/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} lg-w-full overflow-hidden`}>
+        <Providers>
+          <Header />
+        {children}
+        </Providers>
+      </body>
     </html>
   )
 }
