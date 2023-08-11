@@ -1,11 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
+import CartBtn from '../CartBtn';
 
 const Header = () => {
   return (
-    <header className='bg-gradient-to-r from-black to-indigo-900 shadow p-2 flex '>
-      <Link className='text-white' href={'/'}>
+    <header className='bg-gradient-to-r from-black to-indigo-900 shadow p-2 flex justify-between items-center'>
+      <Link className='text-white px-2' href={'/'}>
         Home
+      </Link>
+      <Link className='text-white py-2 px-2' href={'/cart'} >
+        <CartBtn />
       </Link>
     </header>
   );
