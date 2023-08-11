@@ -13,6 +13,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
+      keyframes: {
+        pingOnce: {
+          "50%": { transform: "scale(2)" },
+          100: {transform: "scale(1)" },
+        },
+      },
+      animation: {
+        pingOnce: "pingOnce 0.4s cubic-bezier(0,0,0.2,1)",
+      },
     },
   },
   plugins: [],
