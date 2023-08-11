@@ -8,7 +8,7 @@ const Header = () => {
       <Link className='text-white px-2' href={'/'}>
         Home
       </Link>
-      <Link className='text-white py-2 px-2' href={'/cart'} >
+      <Link className='text-white py-2 px-2' href={'/checkout'}>
         <CartBtn />
       </Link>
     </header>

@@ -12,9 +12,9 @@ interface Props {
 
 const QuantityBtn = (props: Props) => {
   return (
-    <div className='flex gap-2 justify-center items-center border text-black'>
+    <div className='flex gap-1 justify-center items-center text-black text-xs'>
       <Btn onClick={props.onDecrease} variant='outline-primary'>
-        {props.qty === 1 ? <FiTrash /> : <AiOutlineMinus />}
+              {props.qty === 1 ? <FiTrash /> : <AiOutlineMinus />}
       </Btn>
       <p>
         <span>{props.qty}</span>
