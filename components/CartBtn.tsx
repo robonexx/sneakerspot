@@ -14,7 +14,10 @@ const CartBtn = (props: Props) => {
     <div className={`${props.className}`}>
       <AiOutlineShoppingCart />
       {!!totalItems && (
-        <span className='text-black text-mono absolute top-1 right-2 text-xs bg-yellow-400 rounded-full w-4 grid place-content-center animate-pingOnce'>
+        <span
+          className='text-black text-mono absolute top-1 right-2 text-xs bg-yellow-400 rounded-full w-4 grid place-content-center animate-pingOnce'
+          key={totalItems}
+        >
           {totalItems}
         </span>
       )}
