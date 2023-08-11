@@ -56,10 +56,9 @@ export const Btn = ({
       {...props}
       type={type}
       className={`
-   
           ${getVariant(variant)}  transition duration-300  ${
         !paddingLess && 'p-1'
-      }  ${!square && 'rounded-md'} active:scale-95 ${className} `}
+      }  ${!square && 'rounded-sm'} active:scale-95 ${className} `}
     >
       {children}
     </button>

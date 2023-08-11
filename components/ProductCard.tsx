@@ -8,9 +8,9 @@ interface Props {
 }
 const ProductCard = (props: Props) => {
   return (
-    <div className='group relative cursor-pointer shadow px-2 py-4 rounded-lg hover:shadow-lg lg:max-h-80 lg:w-60'>
+    <div className='group relative cursor-pointer shadow px-2 py-4 rounded-sm hover:shadow-lg lg:max-h-80 lg:w-60'>
       {/* Changed bg to white, so the image fits and set it to contain.  */}
-      <div className='aspect-w-1 w-full overflow-hidden rounded-md bg-white lg:aspect-none group-hover:opacity-75 '>
+      <div className='aspect-w-1 w-full overflow-hidden rounded-sm bg-white lg:aspect-none group-hover:opacity-75 '>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <Image
           src={props.product.image}
@@ -21,9 +21,9 @@ const ProductCard = (props: Props) => {
       </div>
       <div className='mt-4 flex justify-between'>
         <div>
-          <h6 className='text-sm text-gray-800 px-2'>{props.product.name}</h6>
+          <h6 className='text-xs text-gray-800 px-2'>{props.product.name}</h6>
         </div>
-        <p className='text-sm font-medium text-gray-500 px-2 border border-gray-800 rounded-lg hover:text-black'>
+        <p className='text-xs font-medium text-gray-500 px-2 border border-gray-800 rounded-sm hover:text-black'>
           {props.product.price} kr
         </p>
       </div>
