@@ -9,6 +9,7 @@ const CheckoutPage = () => {
   const totalPrice = useAppSelector(TotalPriceSelector);
   return (
     <div className='p-4 flex flex-col w-full gap-4 place-content-center'>
+      <h2 className='text-md text-black'>CHECKOUT</h2>
       {cartItems.map((item) => (
         <div key={item.product.id}>
           <CartItemsCard cartItem={item} />

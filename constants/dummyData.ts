@@ -3,31 +3,31 @@ import { Product } from "@/interfaces";
 export const dummyProducts: Product[] = [
   {
     id: 1,
-    name: "Laptop",
-    price: 15689,
+    name: "Air Jordan 12 Retro",
+    price: 2499,
     image:
-      "https://www.elgiganten.se/image/dv_web_D180001002817537/254421/macbook-air-13-m18256-2020-space-grey--pdp_zoom-3000--pdp_main-960.jpg",
+      "https://www.sneakersnstuff.com/images/389501/product_large.jpg",
   },
   {
     id: 2,
-    name: "IPhone 15",
-    price: 17999,
+    name: "Cloudsurfer",
+    price: 1799,
     image:
-      "https://www.elgiganten.se/image/dv_web_D180001002838380/361879/iphone-13-5g-smartphone-128gb-midnight--pdp_zoom-3000--pdp_main-960.jpg",
+      "https://www.sneakersnstuff.com/images/390555/product_large.jpg",
   },
   {
     id: 3,
-    name: "Air fryer",
-    price: 1499,
+    name: "Yeezy Boost 700",
+    price: 2899,
     image:
-      "https://www.elgiganten.se/image/dv_web_D1800010021135650/514566/obh-nordica-easy-fry-precisionplus-airfryer-ag505ds0--pdp_zoom-3000--pdp_main-960.jpg",
+      "https://www.sneakersnstuff.com/images/389579/product_large.jpg",
   },
   {
     id: 4,
-    name: "Samsung 55' TV",
-    price: 12999,
+    name: "Air Jordan 4 retro",
+    price: 2490,
     image:
-      "https://www.elgiganten.se/image/dv_web_D1800010021159012/497797/samsung-55-q60b-4k-qled-smart-tv-2022-calman-kalibrerad--pdp_zoom-3000--pdp_main-960.jpg",
+      "https://img01.ztat.net/article/spp-media-p1/33f7f939bcea47809810a2ed09cd0caa/7a4e747940f94466adf6efc9d822ace7.jpg?imwidth=1800",
   },
   {
     id: 5,
