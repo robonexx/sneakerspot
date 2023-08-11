@@ -27,7 +27,9 @@ const ProductCard = (props: Props) => {
           {props.product.price} kr
         </p>
       </div>
-      <AddToCartBtn product={props.product} />
+      <div className='flex justify-between mt-2'>
+        <AddToCartBtn product={props.product} />
+      </div>
     </div>
   );
 };
