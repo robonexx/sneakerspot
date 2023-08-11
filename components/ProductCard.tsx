@@ -22,7 +22,7 @@ const ProductCard = (props: Props) => {
         <div>
           <h3 className='text-sm text-gray-800 px-2'>{props.product.name}</h3>
         </div>
-        <p className='text-sm font-medium text-gray-400 px-2'>
+        <p className='text-sm font-medium text-gray-500 px-2 border border-gray-800 rounded-lg hover:text-black'>
           {props.product.price} kr
         </p>
       </div>
