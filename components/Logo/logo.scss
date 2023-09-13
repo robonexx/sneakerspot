@@ -3,6 +3,8 @@
     top: 12vh;
     left: 3vw;
     z-index: 1000;
+    height: 4rem;
+    width: 4rem;
     a {
       position: absolute;
       top: 0;
@@ -18,9 +20,10 @@
   }
   .logo {
     position: relative;
-    background: $color-gradient-gold;
+    background: transparent;
     border-radius: 50%;
-    height: 5em;
+    height: inherit;
+    width: inherit;
     padding: 0.5em;
     will-change: filter;
     animation: logo-spin infinite 20s linear;

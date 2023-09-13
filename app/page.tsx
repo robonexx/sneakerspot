@@ -12,6 +12,7 @@ export default function Home() {
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
+        <section className='h-screen bg-slate-800'></section>
       </div>
     </main>
   );
