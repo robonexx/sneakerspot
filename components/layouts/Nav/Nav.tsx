@@ -9,11 +9,9 @@ import styles from './Nav.module.scss';
 
 type Props = {
   children?: ReactNode;
-  icon?: ReactNode;
-  navHeight?: string;
 };
 
-const Nav: FC<Props> = ({ children, icon = '' }) => {
+const Nav: FC<Props> = ({ children }) => {
   const navList = navItems.map(({ name, href }) => (
     <li key={name}>
       <NavItem href={href} name={name} />
@@ -51,7 +49,6 @@ const Nav: FC<Props> = ({ children, icon = '' }) => {
         >
           {navList}
         </ul>
-        {icon}
       </nav>
       {children}
     </>
