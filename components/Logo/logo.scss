@@ -1,0 +1,46 @@
+.logo_wrapper {
+    position: fixed;
+    top: 12vh;
+    left: 3vw;
+    z-index: 1000;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      color: transparent;
+      height: 100%;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 50%;
+      z-index: 1001;
+    }
+  }
+  .logo {
+    position: relative;
+    background: $color-gradient-gold;
+    border-radius: 50%;
+    height: 5em;
+    padding: 0.5em;
+    will-change: filter;
+    animation: logo-spin infinite 20s linear;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #636af2aa);
+    animation: logo-spin infinite 5s linear;
+    cursor: pointer;
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #4ebfdeaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
